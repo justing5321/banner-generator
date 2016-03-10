@@ -5,13 +5,16 @@
   <meta charset="UTF-8">
   <title>jquery template</title>
   <style type="text/css">
-  #name {
-    color:black;
-    background-color:purple;
-  }
-  body {
-    background-image: url("Glitter.jpg");
-  }
+    #name,
+    #color,
+    #animal {
+      color: black;
+      background-color: blue;
+    }
+    
+    html {
+      background-image:url("ocean .jpg");
+    }
   </style>
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>
@@ -23,26 +26,28 @@
 
         var userColor = $('#color').val();
         $('#para').css("color", userColor);
-        
+
       });
     });
   </script>
 </head>
+<div id="background">
 
-<body>
-  <input id="name" type="text" placeholder="Name please...">
-  <br>
-  <br>
-  <br>
-  <input id="color" type="text" placeholder="Favorite color...">
-  <br>
-  <br>
-  <br>
-  <input id="animal" type="text" placeholder="Favorite animal...">
-  <br>
-  <br>
-  <input id="submit" type="submit">
-  <p id="para"></p>
-</body>
+  <body>
+    <input id="name" type="text" placeholder="Name please...">
+    <br>
+    <br>
+    <br>
+    <input id="color" type="text" placeholder="Favorite color...">
+    <br>
+    <br>
+    <br>
+    <input id="animal" type="text" placeholder="Favorite animal...">
+    <br>
+    <br>
+    <input id="submit" type="submit">
+    <p id="para"></p>
+  </body>
+</div>
 
 </html>
