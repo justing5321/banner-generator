@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <title>jquery template</title>
   <style type="text/css">
+  
     #name,
     #color,
     #animal {
       color: black;
-      background-color: blue;
+      background-color: blue; 
     }
     
     html {
@@ -20,12 +21,12 @@
   <script>
     $(function() {
       $('#submit').click(function() {
-        var userName = $('#name').val();
-        var userAnimal = $('#animal').val();
-        $('#para').html(userName + ' likes ' + userAnimal + 's ');
+        var userName = $('#name').val(); // grabbing the value of the users inputs
+        var userAnimal = $('#animal').val();// same thing ^^
+        $('#para').html(userName + ' likes ' + userAnimal + 's '); //setting the users input into the <p> tag so its visible with HTML
 
-        var userColor = $('#color').val();
-        $('#para').css("color", userColor);
+        var userColor = $('#color').val(); //getting value of users input
+        $('#para').css("color", userColor); // setting the css color to what user puts
 
       });
     });
@@ -46,7 +47,7 @@
     <br>
     <br>
     <input id="submit" type="submit">
-    <p id="para"></p>
+    <p id="para"></p> 
   </body>
 </div>
 
